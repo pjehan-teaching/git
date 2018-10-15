@@ -1,0 +1,24 @@
+<section id="tags">
+
+    <section>
+        <h2>Tags</h2>
+    </section>
+
+    <section>
+        <h3>Tags</h3>
+        <p>Git permet de créer des tags afin le plus souvent, de pouvoir préciser la version d’un projet dans l’historique.</p>
+        <p>Utilisez la commande suivante pour afficher l’ensemble des tags d’un dépôt :</p>
+        <pre><code class="language-bash">git tag</code></pre>
+    </section>
+
+    <section>
+        <h3>Tags</h3>
+        <p>Vous pouvez ensuite créer un nouveau tag avec la commande suivante :</p>
+        <pre><code class="language-bash">git tag -a v2.1 -m 'Version 2.1'</code></pre>
+        <p>Vous pouvez également ajouter un tag sur un commit précédent :</p>
+        <pre><code class="language-bash">git tag -a v2.1 -m 'Version 2.1' 150ce56</code></pre>
+        <p>Et ensuite envoyer sur le dépôt distant :</p>
+        <pre><code class="language-bash">git push origin --tags</code></pre>
+    </section>
+
+</section>

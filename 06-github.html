@@ -1,0 +1,54 @@
+<section id="github">
+
+    <section>
+        <h2>Github</h2>
+    </section>
+
+
+  <section>
+    <h3>Github</h3>
+    <p>Allez sur le site internet <a href="http://www.github.com" target="_blank">github.com</a> et créez vous un compte.</p>
+    <p>Créez ensuite un nouveau dépôt puis récupérer son contenu sur votre poste en local à l’aide de la commande git clone.</p>
+    <p>Vous pouvez ensuite utiliser la commande suivante pour afficher la liste des dépôts distants :</p>
+    <pre><code class="language-bash">git remote</code></pre>
+    <footer>
+      <a href="#" class="info">Utilisez git remote -v pour afficher également les urls des dépôts</a>
+    </footer>
+  </section>
+
+<section>
+  <h3>Github</h3>
+  <p>Positionnez-vous dans le nouveau dossier créé puis exécutez les commandes git add, git commit puis git push pour envoyer sur le dépôt distant vos modifications :</p>
+  <pre><code class="language-bash">git push origin master</code></pre>
+  <p>Ici, “origin” correspond au nom du dépôt distant et “master” à la branche que l’on souhaite pusher.</p>
+  <footer>
+    <a href="#" class="info" style="font-size: 0.7em;">Vous pouvez consulter l’état d’un dépôt distant à l’aide de la commande git remote show origin</a>
+  </footer>
+</section>
+
+<section>
+  <h3>Github</h3>
+  <p>Il est possible de travailler avec plusieurs dépôts distants en les ajoutant (git remote add), en les renommant (git remote rename) ou en les supprimant (git remote rm).</p>
+  <pre><code class="language-bash">git remote add simplegit git://github.com/schacon/simplegit-progit.git
+git fetch simplegit
+git remote rename simplegit sgit
+git remote rm sgit
+  </code></pre>
+</section>
+
+  <section>
+    <h3>Github</h3>
+    <p>L’interface web de Github vous permet également de collaborer sur des projets plus facilement.</p>
+    <p>Pour collaborer sur un projet, effectuer un “fork” de celui-ci :</p>
+    <img src="assets/images/fork-button.jpg" alt="Fork">
+    <p>Cela aura pour effet de créer un nouveau dépôt associé à votre compte Github. Ce dernier sera identique au dépôt forké à un instant T.</p>
+  </section>
+
+  <section>
+    <h3>Github</h3>
+    <p>Une fois que vous êtes satisfait des corrections / améliorations apportées au projet, vous pouvez alors effectuer un “pull request” :</p>
+    <img src="assets/images/pull-request-button.png" alt="Pull Request">
+    <p>L’utilisateur propriétaire du projet peut alors choisir d’accepter ou non le pull request.</p>
+  </section>
+
+</section>

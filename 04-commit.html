@@ -1,0 +1,100 @@
+<section id="commit">
+
+  <section>
+    <h2>Commit</h2>
+  </section>
+
+  <section>
+    <h3>Commit</h3>
+    <p>Ajoutez à présent un nouveau fichier index.html dans votre dossier puis executez la commande git status.</p>
+    <p>Utilisez la commande suivante pour ajouter le fichier dans le dépôt git :</p>
+    <pre><code class="language-bash">git add index.html</code></pre>
+    <footer>
+      <a href="#" class="warning" style="font-size: 0.7em;">git add indexe un fichier dans son état actuel. Si vous modifiez ce fichier, il faut relancer git add.</a>
+    </footer>
+  </section>
+
+  <section>
+    <h3>Commit</h3>
+    <p>Executez à nouveau la commande git status pour vous assurer que le fichier est correctement indexé.</p>
+    <p>Utilisez ensuite la commande suivante pour commiter votre fichier :</p>
+    <pre><code class="language-bash">git commit -m 'Ajout du fichier index.html'</code></pre>
+    <footer>
+      <a href="#" class="info" style="font-size: 0.7em;">-m permet de définir le message associé au commit</a>
+    </footer>
+  </section>
+
+  <section>
+    <h3>Commit</h3>
+    <img src="assets/images/commitstrip-1.jpg" alt="CommitStrip">
+  </section>
+
+  <section>
+    <h3>Commit</h3>
+    <p>Si vous avez oublié un fichier lors de votre dernier commit, pas de panique. Vous pouvez toujours effectuer une correction avec cette commande :</p>
+    <pre><code class="language-bash">git commit -m 'Ajout du fichier index.html'
+git add style.css
+git commit --amend </code></pre>
+  </section>
+
+  <section>
+    <h3>Commit</h3>
+    <p>Vous pouvez également annuler l’indexation d’un fichier avec la commande suivante :</p>
+    <pre><code class="language-bash">git reset HEAD index.html</code></pre>
+    <footer>
+      <a href="#" class="info" style="font-size: 0.6em;">Vous pouvez utiliser la commande git config --global alias.unstage ‘reset HEAD --’ pour créer un alias</a>
+      <a href="#" class="warning" style="font-size: 0.7em;">Ne pas utiliser la commande git rm index.html qui aura pour effet de supprimer le fichier</a>
+    </footer>
+  </section>
+
+<section>
+  <h3>Commit</h3>
+  <p>Il est souvent utile de préciser plusieurs fichiers qui ne devront pas être pris en compte par le dépôt git.</p>
+  <p>Pour cela, il est possible de créer un fichier nommé “.gitignore” situé à la racine du dépôt qui permettra de définir les fichiers à ignorer.</p>
+  <pre><code class="language-bash">/images/*
+*.tmp
+readme.txt
+</code></pre>
+</section>
+
+<section>
+  <h3>Commit</h3>
+  <p>Pour consulter le détail des modifications pour chaque fichier non-indexés, vous pouvez utiliser la commande git diff :</p>
+  <pre><code class="language-bash">git diff</code></pre>
+  <footer>
+    <a href="#" class="info" style="font-size: 0.8em;">git diff --staged vous permettra de voir les modifications sur les fichiers déjà indexés</a>
+  </footer>
+</section>
+
+  <section>
+    <h3>Commit</h3>
+    <p>Essayez de renommer le fichier index.html en index.php puis executez la commande git status.</p>
+    <p>Annulez ensuite la modification en renommant index.php en index.html puis executez la commande suivante :</p>
+    <pre><code class="language-bash">git mv index.html index.php</code></pre>
+    <p>Executez à nouveau la commande git status.</p>
+    </section>
+
+    <section>
+      <h3>Commit</h3>
+      <p>Vous pouvez supprimer un fichier de votre prochain commit à l’aide de la commande git rm :</p>
+      <pre><code class="language-bash">git rm index.html</code></pre>
+      <footer>
+        <a href="#" class="warning" style="font-size: 0.7em;">Cette commande aura également pour effet de supprimer le fichier sur votre disque dur</a>
+      </footer>
+    </section>
+
+    <section>
+      <h3>Commit</h3>
+      <p>Vous pouvez également annuler les modifications effectuées sur un fichier depuis votre dernier commit ou bien sur un commit plus ancien :</p>
+      <pre><code class="language-bash">git checkout -- index.html
+git checkout 12eb584 index.html </code></pre>
+    </section>
+
+    <section>
+      <h3>Commit</h3>
+      <p>Vous pouvez aussi annuler un commit réaliser antérieurement :</p>
+      <pre><code class="language-bash">git revert 12eb584</code></pre>
+      <p>Cette action aura pour effet d’annuler les opérations effectuées lors de ce commit et vous devrez ensuite effectuer un nouveau commit pour valider le “revert”.</p>
+    </section>
+
+</section>
