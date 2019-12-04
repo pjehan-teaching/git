@@ -47,24 +47,27 @@ git commit --amend </code></pre>
     </footer>
   </section>
 
-<section>
-  <h3>Commit</h3>
-  <p>Il est souvent utile de préciser plusieurs fichiers qui ne devront pas être pris en compte par le dépôt git.</p>
-  <p>Pour cela, il est possible de créer un fichier nommé “.gitignore” situé à la racine du dépôt qui permettra de définir les fichiers à ignorer.</p>
-  <pre><code class="language-bash">/images/*
+  <section>
+    <h3>Commit</h3>
+    <p>Il est souvent utile de préciser plusieurs fichiers qui ne devront pas être pris en compte par le dépôt git.</p>
+    <p>Pour cela, il est possible de créer un fichier nommé ".gitignore" situé à la racine du dépôt qui permettra de définir les fichiers à ignorer.</p>
+    <pre><code class="language-bash">/images/*
 *.tmp
 readme.txt
 </code></pre>
-</section>
+    <footer>
+      <a href="#" class="info" style="font-size: 0.8em;">Il est possible de définir des règles globale dans le fichier <code class="language-bash">~/.config/git/ignore</code></a>
+    </footer>
+  </section>
 
-<section>
-  <h3>Commit</h3>
-  <p>Pour consulter le détail des modifications pour chaque fichier non-indexés, vous pouvez utiliser la commande git diff :</p>
-  <pre><code class="language-bash">git diff</code></pre>
-  <footer>
-    <a href="#" class="info" style="font-size: 0.8em;">git diff --staged vous permettra de voir les modifications sur les fichiers déjà indexés</a>
-  </footer>
-</section>
+  <section>
+    <h3>Commit</h3>
+    <p>Pour consulter le détail des modifications pour chaque fichier non-indexés, vous pouvez utiliser la commande git diff :</p>
+    <pre><code class="language-bash">git diff</code></pre>
+    <footer>
+      <a href="#" class="info" style="font-size: 0.8em;">git diff --staged vous permettra de voir les modifications sur les fichiers déjà indexés</a>
+    </footer>
+  </section>
 
   <section>
     <h3>Commit</h3>
